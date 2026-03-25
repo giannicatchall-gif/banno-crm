@@ -306,15 +306,15 @@ body {
     <div class="chart-card"><h3>Top 15 Paesi</h3><div id="countryChart"></div></div>
     <div class="chart-card"><h3>Pipeline Funnel</h3><div id="funnelChart"></div></div>
   </div>
-  <div class="command-bar">
+  <div class="command-bar" style="display:none">
     <div class="cmd-buttons">
-      
-      
-      
-      
-      
-      
-      
+      <button class="cmd-btn" data-cmd="scrape">Scrape</button>
+      <button class="cmd-btn" data-cmd="enrich">Enrich</button>
+      <button class="cmd-btn" data-cmd="verify">Verify</button>
+      <button class="cmd-btn" data-cmd="maps">Maps</button>
+      <button class="cmd-btn" data-cmd="dedup">Dedup</button>
+      <button class="cmd-btn" data-cmd="export">Export</button>
+      <button class="cmd-btn stop" id="stopBtn">Stop</button>
       <span class="cmd-status"><span class="spinner" id="cmdSpinner"></span><span id="cmdStatusText"></span></span>
       <button class="log-toggle" id="logToggle">Mostra Log</button>
     </div>
